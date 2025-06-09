@@ -74,7 +74,7 @@ namespace Il2CppInterop.Runtime.Injection
             if (InjectedAssembly == null) CreateInjectedAssembly();
             GenericMethodGetMethodHook.ApplyHook();
             GetTypeInfoFromTypeDefinitionIndexHook.ApplyHook();
-            GetFieldDefaultValueHook.ApplyHook();
+            // GetFieldDefaultValueHook.ApplyHook();
             ClassInit ??= FindClassInit();
             FromIl2CppTypeHook.ApplyHook();
             FromNameHook.ApplyHook();
